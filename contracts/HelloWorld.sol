@@ -10,12 +10,16 @@ contract HelloWorld {
         owner = msg.sender;
     }
 
-    function helloWorld() public view returns (string memory) {
+    function getText() public view returns (string memory) {
         return text;
     }
 
     function setText(string calldata newText) public onlyOwner {
         text = newText;
+    }
+
+    function transferOwnership(address newOwner) public onlyOwner {
+        owner = newOwner;
     }
 
     modifier onlyOwner() {
