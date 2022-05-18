@@ -2,7 +2,7 @@
 pragma solidity >=0.7.0 <0.9.0;
 
 contract HelloWorld {
-    string private text;
+    bytes32 private text;
     address public owner;
 
     constructor() {
@@ -10,11 +10,11 @@ contract HelloWorld {
         owner = msg.sender;
     }
 
-    function getText() public view returns (string memory) {
+    function getText() public view returns (bytes32) {
         return text;
     }
 
-    function setText(string calldata newText) public onlyOwner {
+    function setText(bytes32 newText) public onlyOwner {
         text = newText;
     }
 
