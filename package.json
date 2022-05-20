@@ -2,6 +2,9 @@
   "name": "project-solidity",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "console": "ts-node ./scripts/Ballot/deployment.ts"
+  },
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {

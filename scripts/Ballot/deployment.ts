@@ -2,15 +2,15 @@ import { ethers, providers } from "ethers";
 
 import { Ballot } from "../../typechain";
 
-const PROPOSALS = ["Proposal 1", "Proposal 2", "Proposal 3"];
+// const PROPOSALS = ["Proposal 1", "Proposal 2", "Proposal 3"];
 
-function convertStringArrayToBytes32(array: string[]) {
-  const bytes32Array = [];
-  for (let x = 0; x < array.length; x++) {
-    bytes32Array.push(ethers.utils.formatBytes32String(array[x]));
-  }
-  return bytes32Array;
-}
+// function convertStringArrayToBytes32(array: string[]) {
+//   const bytes32Array = [];
+//   for (let x = 0; x < array.length; x++) {
+//     bytes32Array.push(ethers.utils.formatBytes32String(array[x]));
+//   }
+//   return bytes32Array;
+// }
 
 const EXPOSED_KEY =
   "8da4ef21b864d2cc526dbdb2a120bd2874c36c9d0a1fb7f8c63d7f7a8b41de8f";
